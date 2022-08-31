@@ -39,7 +39,6 @@ class TestAdminServices(APITestCase):
         self.assertEqual(resp.status_code, status.HTTP_201_CREATED)         
         self.assertEqual(resp.data['name'], data['name'])
 
-
     def test_create_textbook(self):
 
         subject = Subject.objects.create(
