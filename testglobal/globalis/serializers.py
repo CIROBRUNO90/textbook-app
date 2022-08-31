@@ -9,8 +9,6 @@ class ProfessorSerializer(serializers.ModelSerializer):
         model = Professor
         fields = '__all__'
 
-    def create(self, validated_data):
-        return super().create(validated_data)
 
 class SubjectSerializer(serializers.ModelSerializer):
 
@@ -18,8 +16,6 @@ class SubjectSerializer(serializers.ModelSerializer):
         model = Subject
         fields = '__all__'
 
-    def create(self, validated_data):
-        return super().create(validated_data)
 
 class TextbookSerializer(serializers.ModelSerializer):
 
@@ -27,5 +23,3 @@ class TextbookSerializer(serializers.ModelSerializer):
         model = Textbook
         fields = '__all__'
 
-    def create(self, validated_data):
-        return super().create(validated_data)
